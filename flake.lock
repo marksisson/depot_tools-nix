@@ -1,0 +1,399 @@
+{
+  "nodes": {
+    "command-line-tools-for-xcode-nix": {
+      "inputs": {
+        "flake-parts": [
+          "xcode-nix",
+          "unxip-nix",
+          "flake-parts"
+        ],
+        "git-hooks": [
+          "xcode-nix",
+          "unxip-nix",
+          "git-hooks"
+        ],
+        "nixpkgs": [
+          "xcode-nix",
+          "unxip-nix",
+          "nixpkgs"
+        ],
+        "systems": [
+          "xcode-nix",
+          "unxip-nix",
+          "systems"
+        ],
+        "treefmt-nix": [
+          "xcode-nix",
+          "unxip-nix",
+          "treefmt-nix"
+        ]
+      },
+      "locked": {
+        "lastModified": 1724378869,
+        "narHash": "sha256-PFQPf9pmgEfQBkSeS0ycW30JtVhG9KjHVdPCT0tdBGs=",
+        "ref": "refs/heads/main",
+        "rev": "4c625f1a3867dc8e3c876137551f1e0aaa349fc5",
+        "revCount": 2,
+        "type": "git",
+        "url": "ssh://git@github.com/marksisson/command-line-tools-for-xcode-nix"
+      },
+      "original": {
+        "type": "git",
+        "url": "ssh://git@github.com/marksisson/command-line-tools-for-xcode-nix"
+      }
+    },
+    "flake-compat": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1696426674,
+        "narHash": "sha256-kvjfFW7WAETZlt09AgDn1MrtKzP7t90Vf7vypd3OL1U=",
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "rev": "0f9255e01c2351cc7d116c072cb317785dd33b33",
+        "type": "github"
+      },
+      "original": {
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "type": "github"
+      }
+    },
+    "flake-parts": {
+      "inputs": {
+        "nixpkgs-lib": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1725234343,
+        "narHash": "sha256-+ebgonl3NbiKD2UD0x4BszCZQ6sTfL4xioaM49o5B3Y=",
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "rev": "567b938d64d4b4112ee253b9274472dc3a346eb6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "type": "github"
+      }
+    },
+    "flake-utils": {
+      "inputs": {
+        "systems": "systems"
+      },
+      "locked": {
+        "lastModified": 1694529238,
+        "narHash": "sha256-zsNZZGTGnMOf9YpHKJqMSsa0dXbfmxeoJ7xHlrt+xmY=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "ff7b65b44d01cf9ba6a71320833626af21126384",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "git-hooks": {
+      "inputs": {
+        "flake-compat": "flake-compat",
+        "gitignore": "gitignore",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "nixpkgs-stable": "nixpkgs-stable"
+      },
+      "locked": {
+        "lastModified": 1724857454,
+        "narHash": "sha256-Qyl9Q4QMTLZnnBb/8OuQ9LSkzWjBU1T5l5zIzTxkkhk=",
+        "owner": "cachix",
+        "repo": "git-hooks.nix",
+        "rev": "4509ca64f1084e73bc7a721b20c669a8d4c5ebe6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cachix",
+        "repo": "git-hooks.nix",
+        "type": "github"
+      }
+    },
+    "gitignore": {
+      "inputs": {
+        "nixpkgs": [
+          "git-hooks",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1709087332,
+        "narHash": "sha256-HG2cCnktfHsKV0s4XW83gU3F57gaTljL9KNSuG6bnQs=",
+        "owner": "hercules-ci",
+        "repo": "gitignore.nix",
+        "rev": "637db329424fd7e46cf4185293b9cc8c88c95394",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hercules-ci",
+        "repo": "gitignore.nix",
+        "type": "github"
+      }
+    },
+    "gomod2nix": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "nixpkgs": [
+          "luci-go",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1717631770,
+        "narHash": "sha256-HaUc8mKC1AvQ5Vvsi09mBNmybKuPxakobyQaqeXMJ/Y=",
+        "owner": "marksisson",
+        "repo": "gomod2nix",
+        "rev": "db1533e57804423eb99529530e99be1c3c69f16b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "marksisson",
+        "ref": "patches/fix-mkgoenv-to-allow-passing-more-attributes",
+        "repo": "gomod2nix",
+        "type": "github"
+      }
+    },
+    "luci-go": {
+      "inputs": {
+        "flake-parts": [
+          "flake-parts"
+        ],
+        "git-hooks": [
+          "git-hooks"
+        ],
+        "gomod2nix": "gomod2nix",
+        "luci-go-src": "luci-go-src",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "systems": [
+          "systems"
+        ],
+        "treefmt-nix": [
+          "treefmt-nix"
+        ]
+      },
+      "locked": {
+        "lastModified": 1725374583,
+        "narHash": "sha256-V2VPYHAt6400QkDRv67dh4CB484jYh+y0x6T5DjpCCc=",
+        "ref": "refs/heads/main",
+        "rev": "e4936834870f63f8d34d377bf3ec45db000df471",
+        "revCount": 1,
+        "type": "git",
+        "url": "ssh://git@github.com/marksisson/luci-go-nix"
+      },
+      "original": {
+        "type": "git",
+        "url": "ssh://git@github.com/marksisson/luci-go-nix"
+      }
+    },
+    "luci-go-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1725002865,
+        "narHash": "sha256-zkf6Sy+D6UyLeqSSC6I8UlfUjjAkDUaI91USy0YineQ=",
+        "ref": "refs/heads/main",
+        "rev": "9acccbdd7d15a4ea0cc07c49e2f176c4a5b9413c",
+        "revCount": 16948,
+        "type": "git",
+        "url": "https://chromium.googlesource.com/infra/luci/luci-go"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://chromium.googlesource.com/infra/luci/luci-go"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1725001927,
+        "narHash": "sha256-eV+63gK0Mp7ygCR0Oy4yIYSNcum2VQwnZamHxYTNi+M=",
+        "rev": "6e99f2a27d600612004fbd2c3282d614bfee6421",
+        "revCount": 634639,
+        "type": "tarball",
+        "url": "https://api.flakehub.com/f/pinned/NixOS/nixpkgs/0.2405.634639%2Brev-6e99f2a27d600612004fbd2c3282d614bfee6421/0191a7d0-c5e0-7b4c-b092-12c5992bb5cf/source.tar.gz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://flakehub.com/f/NixOS/nixpkgs/%2A.tar.gz"
+      }
+    },
+    "nixpkgs-stable": {
+      "locked": {
+        "lastModified": 1720386169,
+        "narHash": "sha256-NGKVY4PjzwAa4upkGtAMz1npHGoRzWotlSnVlqI40mo=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "194846768975b7ad2c4988bdb82572c00222c0d7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-24.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flake-parts": "flake-parts",
+        "git-hooks": "git-hooks",
+        "luci-go": "luci-go",
+        "nixpkgs": "nixpkgs",
+        "systems": "systems_2",
+        "treefmt-nix": "treefmt-nix",
+        "xcode-nix": "xcode-nix"
+      }
+    },
+    "systems": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    },
+    "systems_2": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    },
+    "treefmt-nix": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1725271838,
+        "narHash": "sha256-VcqxWT0O/gMaeWTTjf1r4MOyG49NaNxW4GHTO3xuThE=",
+        "owner": "numtide",
+        "repo": "treefmt-nix",
+        "rev": "9fb342d14b69aefdf46187f6bb80a4a0d97007cd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "treefmt-nix",
+        "type": "github"
+      }
+    },
+    "unxip-nix": {
+      "inputs": {
+        "command-line-tools-for-xcode-nix": "command-line-tools-for-xcode-nix",
+        "flake-parts": [
+          "xcode-nix",
+          "flake-parts"
+        ],
+        "git-hooks": [
+          "xcode-nix",
+          "git-hooks"
+        ],
+        "nixpkgs": [
+          "xcode-nix",
+          "nixpkgs"
+        ],
+        "systems": [
+          "xcode-nix",
+          "systems"
+        ],
+        "treefmt-nix": [
+          "xcode-nix",
+          "treefmt-nix"
+        ],
+        "unxip-src": "unxip-src"
+      },
+      "locked": {
+        "lastModified": 1724384131,
+        "narHash": "sha256-wdhQcPWP0618OrY+BEde6ED+HOAFi7E9tK/oHHIJSMs=",
+        "ref": "refs/heads/main",
+        "rev": "189889021aa6d123fa7f048f1158e10381539a2f",
+        "revCount": 2,
+        "type": "git",
+        "url": "ssh://git@github.com/marksisson/unxip-nix"
+      },
+      "original": {
+        "type": "git",
+        "url": "ssh://git@github.com/marksisson/unxip-nix"
+      }
+    },
+    "unxip-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1698549155,
+        "narHash": "sha256-GpiJ4F+VMrVSgNACMuCTixWd32eco3eaSKZotP4INT8=",
+        "owner": "saagarjha",
+        "repo": "unxip",
+        "rev": "aeb6160a8a8e8b2bdc2e0b9f747a4b941046c624",
+        "type": "github"
+      },
+      "original": {
+        "owner": "saagarjha",
+        "ref": "v3.0",
+        "repo": "unxip",
+        "type": "github"
+      }
+    },
+    "xcode-nix": {
+      "inputs": {
+        "flake-parts": [
+          "flake-parts"
+        ],
+        "git-hooks": [
+          "git-hooks"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "systems": [
+          "systems"
+        ],
+        "treefmt-nix": [
+          "treefmt-nix"
+        ],
+        "unxip-nix": "unxip-nix"
+      },
+      "locked": {
+        "lastModified": 1724419481,
+        "narHash": "sha256-wOaVbtFbWk00LvsOmVBaxkDx7UOQQBFXjPUwVpFp8pw=",
+        "ref": "refs/heads/main",
+        "rev": "0396790ae706ac5f1e4810a802a7cc04fc622f59",
+        "revCount": 13,
+        "type": "git",
+        "url": "ssh://git@github.com/marksisson/xcode-nix"
+      },
+      "original": {
+        "type": "git",
+        "url": "ssh://git@github.com/marksisson/xcode-nix"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

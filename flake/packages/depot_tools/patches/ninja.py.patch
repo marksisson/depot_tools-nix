@@ -1,0 +1,23 @@
+diff --git a/ninja.py b/ninja.py
+index 49aa71b8..4349e990 100755
+--- a/ninja.py
++++ b/ninja.py
+@@ -16,6 +16,7 @@ import gn_helper
+ 
+ 
+ def findNinjaInPath():
++    current_script_dir = os.path.dirname(os.path.abspath(__file__))
+     env_path = os.getenv("PATH")
+     if not env_path:
+         return
+@@ -23,8 +24,8 @@ def findNinjaInPath():
+     if sys.platform in ("win32", "cygwin"):
+         exe += ".exe"
+     for bin_dir in env_path.split(os.pathsep):
+-        if bin_dir.rstrip(os.sep).endswith("depot_tools"):
+-            # skip depot_tools to avoid calling ninja.py infinitely.
++        if os.path.abspath(bin_dir) == current_script_dir:
++            # skip current script directory to avoid calling ninja.py infinitely.
+             continue
+         ninja_path = os.path.join(bin_dir, exe)
+         if os.path.isfile(ninja_path):

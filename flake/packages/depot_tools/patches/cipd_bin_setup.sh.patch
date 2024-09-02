@@ -1,0 +1,13 @@
+diff --git a/cipd_bin_setup.sh b/cipd_bin_setup.sh
+index 376b3343..f259f1a4 100644
+--- a/cipd_bin_setup.sh
++++ b/cipd_bin_setup.sh
+@@ -18,7 +18,7 @@ function cipd_bin_setup {
+     # value in .cipd_client_root file overrides the default root.
+     CIPD_ROOT_OVERRIDE_FILE="${MYPATH}/.cipd_client_root"
+     if [ -f "${CIPD_ROOT_OVERRIDE_FILE}" ]; then
+-        ROOT=$(<"${CIPD_ROOT_OVERRIDE_FILE}")
++        ROOT=$(eval echo "$(cat "${CIPD_ROOT_OVERRIDE_FILE}")")
+     fi
+ 
+     (

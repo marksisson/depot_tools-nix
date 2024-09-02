@@ -1,0 +1,19 @@
+diff --git a/utils.py b/utils.py
+index 5500dbf6..15fcde5d 100644
+--- a/utils.py
++++ b/utils.py
+@@ -31,11 +31,11 @@ def depot_tools_version():
+ 
+ 
+ def depot_tools_config_dir():
+-    # Use depot tools path for mac, windows.
+-    if not sys.platform.startswith('linux'):
++    # Use depot tools path for windows.
++    if sys.platform.startswith('win'):
+         return DEPOT_TOOLS_ROOT
+ 
+-    # Use $XDG_CONFIG_HOME/depot_tools or $HOME/.config/depot_tools on linux.
++    # Use $XDG_CONFIG_HOME/depot_tools or $HOME/.config/depot_tools on linux and macOS.
+     config_root = os.getenv('XDG_CONFIG_HOME', os.path.expanduser('~/.config'))
+     return os.path.join(config_root, 'depot_tools')
+ 
