@@ -9,7 +9,7 @@
           src = pkgs.fetchgit {
             url = "https://chromium.googlesource.com/chromium/tools/depot_tools.git";
             leaveDotGit = true;
-            hash = "sha256-jnN8PANX8IfnO3l9fVS1cUUlelNPsM+qk3JbnXBD2zc=";
+            hash = "sha256-/yXb+j/eD9MWITjrpiDQZZ6u+IumkZA0vMpbmPlb/So=";
           };
           patchedSrc = pkgs.applyPatches {
             name = "depot_tools";

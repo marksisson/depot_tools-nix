@@ -29,11 +29,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1724378869,
-        "narHash": "sha256-PFQPf9pmgEfQBkSeS0ycW30JtVhG9KjHVdPCT0tdBGs=",
+        "lastModified": 1726089984,
+        "narHash": "sha256-f8O3BLl4umE51NqTG6C8EtyQE8dLvtkGYUWGohQIIW8=",
         "ref": "refs/heads/main",
-        "rev": "4c625f1a3867dc8e3c876137551f1e0aaa349fc5",
-        "revCount": 2,
+        "rev": "0fe0be35f639ab8f9263c332380fa56fbda9fbbe",
+        "revCount": 4,
         "type": "git",
         "url": "ssh://git@github.com/marksisson/command-line-tools-for-xcode-nix"
       },
@@ -106,11 +106,11 @@
         "nixpkgs-stable": "nixpkgs-stable"
       },
       "locked": {
-        "lastModified": 1724857454,
-        "narHash": "sha256-Qyl9Q4QMTLZnnBb/8OuQ9LSkzWjBU1T5l5zIzTxkkhk=",
+        "lastModified": 1725513492,
+        "narHash": "sha256-tyMUA6NgJSvvQuzB7A1Sf8+0XCHyfSPRx/b00o6K0uo=",
         "owner": "cachix",
         "repo": "git-hooks.nix",
-        "rev": "4509ca64f1084e73bc7a721b20c669a8d4c5ebe6",
+        "rev": "7570de7b9b504cfe92025dd1be797bf546f66528",
         "type": "github"
       },
       "original": {
@@ -215,12 +215,12 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1725001927,
-        "narHash": "sha256-eV+63gK0Mp7ygCR0Oy4yIYSNcum2VQwnZamHxYTNi+M=",
-        "rev": "6e99f2a27d600612004fbd2c3282d614bfee6421",
-        "revCount": 634639,
+        "lastModified": 1725930920,
+        "narHash": "sha256-RVhD9hnlTT2nJzPHlAqrWqCkA7T6CYrP41IoVRkciZM=",
+        "rev": "44a71ff39c182edaf25a7ace5c9454e7cba2c658",
+        "revCount": 635017,
         "type": "tarball",
-        "url": "https://api.flakehub.com/f/pinned/NixOS/nixpkgs/0.2405.634639%2Brev-6e99f2a27d600612004fbd2c3282d614bfee6421/0191a7d0-c5e0-7b4c-b092-12c5992bb5cf/source.tar.gz"
+        "url": "https://api.flakehub.com/f/pinned/NixOS/nixpkgs/0.2405.635017%2Brev-44a71ff39c182edaf25a7ace5c9454e7cba2c658/0191e118-96de-7f99-9c6d-1969b7bedf41/source.tar.gz"
       },
       "original": {
         "type": "tarball",
@@ -330,11 +330,11 @@
         "unxip-src": "unxip-src"
       },
       "locked": {
-        "lastModified": 1724384131,
-        "narHash": "sha256-wdhQcPWP0618OrY+BEde6ED+HOAFi7E9tK/oHHIJSMs=",
+        "lastModified": 1726090019,
+        "narHash": "sha256-WHq8upf+wbumgSOpCaYQcYhMR29ZqxdnycXCWKiWQwk=",
         "ref": "refs/heads/main",
-        "rev": "189889021aa6d123fa7f048f1158e10381539a2f",
-        "revCount": 2,
+        "rev": "3ec7d8efa33aa7b3432f4f4944473a0ad2d7d480",
+        "revCount": 3,
         "type": "git",
         "url": "ssh://git@github.com/marksisson/unxip-nix"
       },
@@ -380,11 +380,11 @@
         "unxip-nix": "unxip-nix"
       },
       "locked": {
-        "lastModified": 1724419481,
-        "narHash": "sha256-wOaVbtFbWk00LvsOmVBaxkDx7UOQQBFXjPUwVpFp8pw=",
+        "lastModified": 1726090511,
+        "narHash": "sha256-8CEeqBtOG8N//S7hfLTDCKD8gts0uSislCMAzdCmkHE=",
         "ref": "refs/heads/main",
-        "rev": "0396790ae706ac5f1e4810a802a7cc04fc622f59",
-        "revCount": 13,
+        "rev": "5f62b887544280249c97666eb19c05795941db95",
+        "revCount": 16,
         "type": "git",
         "url": "ssh://git@github.com/marksisson/xcode-nix"
       },
