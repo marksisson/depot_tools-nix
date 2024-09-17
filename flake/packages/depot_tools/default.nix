@@ -34,7 +34,7 @@
           buildPhase = ''
             patchShebangs .
             ./update_depot_tools_toggle.py --disable
-            echo "\$HOME/.config/depot_tools-''${version}" > .cipd_client_root
+            echo "\$CIPD_ROOT_PREFIX/.config/depot_tools" > .cipd_client_root
           '';
           installPhase = ''
             mkdir -p $out/bin
