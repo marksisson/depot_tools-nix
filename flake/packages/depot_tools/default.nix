@@ -7,9 +7,11 @@
       packages.depot_tools =
         let
           src = pkgs.fetchgit {
+            name = "depot_tools-src";
             url = "https://chromium.googlesource.com/chromium/tools/depot_tools.git";
+            rev = "74ec765";
             leaveDotGit = true;
-            hash = "sha256-/yXb+j/eD9MWITjrpiDQZZ6u+IumkZA0vMpbmPlb/So=";
+            hash = "sha256-wL8Kk6Hh4FfmTL5stbOXNMAq/npDJKLcMhTp0KQ1m5k=";
           };
           patchedSrc = pkgs.applyPatches {
             name = "depot_tools";
