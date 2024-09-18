@@ -20,10 +20,9 @@
               ./patches/utils.py.patch
             ];
           };
-          revision = pkgs.runCommand "get-rev"
-            {
-              nativeBuildInputs = [ pkgs.git ];
-            } "GIT_DIR=${src}/.git git rev-parse --short HEAD | tr -d '\n' > $out";
+          revision = pkgs.runCommand "get-rev" { nativeBuildInputs = [ pkgs.git ]; } ''
+            GIT_DIR=${src}/.git git rev-parse --short HEAD | tr -d '\n' > $out
+          '';
         in
         stdenv.mkDerivation {
           pname = "depot_tools";
@@ -34,7 +33,7 @@
           buildPhase = ''
             patchShebangs .
             ./update_depot_tools_toggle.py --disable
-            echo "\$CIPD_ROOT_PREFIX/.config/depot_tools" > .cipd_client_root
+            echo "\$CIPD_ROOT_PREFIX/.cipd_bin" > .cipd_client_root
           '';
           installPhase = ''
             mkdir -p $out/bin
