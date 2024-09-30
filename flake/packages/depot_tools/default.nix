@@ -11,7 +11,7 @@
             url = "https://chromium.googlesource.com/chromium/tools/depot_tools.git";
             rev = "74ec765";
             leaveDotGit = true;
-            hash = "sha256-pcbuv2RbckG41vwaKEV7qUVF24624MBRVQfuPCmQdw4=";
+            hash = "sha256-9LyI7G7KdefFDQKsou45oKSshjPo+ShAGsjsCPthzug=";
           };
           patchedSrc = pkgs.applyPatches {
             name = "depot_tools";
