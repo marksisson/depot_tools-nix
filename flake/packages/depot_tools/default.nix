@@ -1,4 +1,4 @@
-{
+{ self, ... }: {
   perSystem = { inputs', pkgs, ... }:
     let
       inherit (inputs'.xcode-nix.packages) stdenv;
@@ -9,9 +9,9 @@
           src = pkgs.fetchgit {
             name = "depot_tools-src";
             url = "https://chromium.googlesource.com/chromium/tools/depot_tools.git";
-            rev = "74ec765";
+            rev = "25f9761";
             leaveDotGit = true;
-            hash = "sha256-9LyI7G7KdefFDQKsou45oKSshjPo+ShAGsjsCPthzug=";
+            hash = "sha256-Mt96dyCRi2e3WKR3BCcFe6PF7+hidHF9XKvRJsg1lEA=";
           };
           patchedSrc = pkgs.applyPatches {
             name = "depot_tools";
@@ -31,6 +31,9 @@
           src = patchedSrc;
           version = "0" + builtins.readFile revision;
           phases = [ "unpackPhase" "buildPhase" "installPhase" ];
+          postUnpack = ''
+            cp ${self}/flake/packages/depot_tools/src/fetch_configs/airscrew.py $sourceRoot/fetch_configs/
+          '';
           propagatedNativeBuildInputs = [ pkgs.python3 ];
           buildPhase = ''
             patchShebangs .
