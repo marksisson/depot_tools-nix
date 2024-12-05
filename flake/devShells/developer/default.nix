@@ -3,7 +3,6 @@
     {
       devShells.developer =
         let
-          inherit (inputs'.xcode-nix.packages) stdenv;
           formatters = [ treefmt ] ++ treefmt-programs;
           language-servers = [
             pkgs.nodePackages.bash-language-server
@@ -14,7 +13,7 @@
           treefmt = config.treefmt.build.wrapper;
           treefmt-programs = builtins.attrValues config.treefmt.build.programs;
         in
-        pkgs.mkShell.override { inherit stdenv; } {
+        pkgs.mkShell {
           packages = formatters ++ language-servers ++ linters ++ tools;
           shellHook = ''
             ${config.pre-commit.installationScript}

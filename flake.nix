@@ -19,16 +19,6 @@
         treefmt-nix.follows = "treefmt-nix";
       };
     };
-    xcode-nix = {
-      url = "git+ssh://git@github.com/marksisson/xcode-nix";
-      inputs = {
-        flake-parts.follows = "flake-parts";
-        git-hooks.follows = "git-hooks";
-        nixpkgs.follows = "nixpkgs";
-        systems.follows = "systems";
-        treefmt-nix.follows = "treefmt-nix";
-      };
-    };
     # nix tools
     flake-parts = {
       url = "github:hercules-ci/flake-parts";
