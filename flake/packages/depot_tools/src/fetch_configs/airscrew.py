@@ -10,12 +10,11 @@ class Airscrew(config_util.Config):
     @staticmethod
     def fetch_spec(_props):
         solution = {
-            'custom_deps': {},
-            'deps_file': 'DEPS',
-            'managed': False,
             'name': 'src/flutter',
-            'safesync_url': '',
             'url': 'git@github.com:razorrock/airscrew.git',
+            'custom_deps': {
+                'src/flutter/third_party/notcurses': 'ssh://git@github.com/razorrock/notcurses',
+            },
         }
         spec = {'solutions': [solution]}
         return {
