@@ -6,9 +6,9 @@
         src = pkgs.fetchgit {
           name = "${pname}-src";
           url = "https://chromium.googlesource.com/chromium/tools/depot_tools.git";
-          rev = "25f9761";
+          rev = "263e08dde32e8917411f09bdc095be6da3a86311";
           leaveDotGit = true;
-          hash = "sha256-Mt96dyCRi2e3WKR3BCcFe6PF7+hidHF9XKvRJsg1lEA=";
+          hash = "sha256-6AQUaTYHYw/Ix7d2orYJXz+vZKd+JjmoNs05nAGrsQo=";
         };
         patchedSrc = pkgs.applyPatches {
           inherit pname src;
