@@ -13,8 +13,21 @@ class Airscrew(config_util.Config):
             'name': 'src/flutter',
             'url': 'git@github.com:razorrock/airscrew.git',
             'custom_deps': {
-                'src/flutter/third_party/notcurses': 'ssh://git@github.com/razorrock/notcurses',
+                'src': 'ssh://git@github.com/razorrock/buildroot.git',
+                'src/flutter/third_party/libdeflate': 'https://github.com/ebiggers/libdeflate.git',
+                'src/flutter/third_party/ncurses@unmanaged': None,
+                'src/flutter/third_party/notcurses': 'ssh://git@github.com/razorrock/notcurses.git',
             },
+            'custom_hooks': [
+                {
+                    'name': 'download_ncurses',
+                    'pattern': 'src/flutter/third_party/ncurses',
+                    'action': [
+                        'python3',
+                        'src/flutter/tools/download_ncurses.py',
+                    ],
+                },
+            ],
         }
         spec = {'solutions': [solution]}
         return {
