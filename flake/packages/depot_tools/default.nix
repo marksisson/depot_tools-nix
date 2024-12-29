@@ -1,14 +1,14 @@
-{ self, ... }: {
+{ self, inputs, ... }: {
   perSystem = { inputs', pkgs, ... }: {
     packages.depot_tools =
       let
         pname = "depot_tools";
         src = pkgs.fetchgit {
-          name = "${pname}-src";
+          name = "${inputs.depot_tools.shortRev}-${pname}-src";
           url = "https://chromium.googlesource.com/chromium/tools/depot_tools.git";
-          rev = "263e08dde32e8917411f09bdc095be6da3a86311";
+          rev = inputs.depot_tools.rev;
           leaveDotGit = true;
-          hash = "sha256-6AQUaTYHYw/Ix7d2orYJXz+vZKd+JjmoNs05nAGrsQo=";
+          hash = "sha256-EivKWZeJ3PgSbxiIj5CV0MI3I53XBD9Pdnxtq6c92gQ=";
         };
         patchedSrc = pkgs.applyPatches {
           inherit pname src;

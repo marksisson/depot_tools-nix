@@ -8,6 +8,10 @@
     };
 
   inputs = {
+    depot_tools = {
+      url = "git+https://chromium.googlesource.com/chromium/tools/depot_tools";
+      flake = false;
+    };
     # dependencies
     luci-go = {
       url = "git+ssh://git@github.com/marksisson/luci-go-nix";
