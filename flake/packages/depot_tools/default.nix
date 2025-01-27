@@ -8,7 +8,7 @@
           url = "https://chromium.googlesource.com/chromium/tools/depot_tools.git";
           rev = inputs.depot_tools.rev;
           leaveDotGit = true;
-          hash = "sha256-EivKWZeJ3PgSbxiIj5CV0MI3I53XBD9Pdnxtq6c92gQ=";
+          hash = "sha256-BIjU668fBlobUZzXsj3PhUZubpKUGVeBoRm7QV9Z9UI=";
         };
         patchedSrc = pkgs.applyPatches {
           inherit pname src;
@@ -43,9 +43,6 @@
           mkdir -p $out/bin
           cp -r . $out/bin
         '';
-        passthru = {
-          CUSTOM_CIPD_CLIENT = "${inputs'.luci-go.packages.luci-go}/bin/cipd";
-        };
       };
   };
 }

@@ -12,17 +12,6 @@
       url = "git+https://chromium.googlesource.com/chromium/tools/depot_tools";
       flake = false;
     };
-    # dependencies
-    luci-go = {
-      url = "git+ssh://git@github.com/marksisson/luci-go-nix";
-      inputs = {
-        flake-parts.follows = "flake-parts";
-        git-hooks.follows = "git-hooks";
-        nixpkgs.follows = "nixpkgs";
-        systems.follows = "systems";
-        treefmt-nix.follows = "treefmt-nix";
-      };
-    };
     # nix tools
     flake-parts = {
       url = "github:hercules-ci/flake-parts";

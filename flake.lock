@@ -3,11 +3,11 @@
     "depot_tools": {
       "flake": false,
       "locked": {
-        "lastModified": 1734716896,
-        "narHash": "sha256-r2vskYTQ1f1K65zFh8KnNoSEdzyOUjLi7SFkCXfGw50=",
+        "lastModified": 1737756915,
+        "narHash": "sha256-0C/3E7dAJ+iKZJoeu6KmZkON2oq4IkO/ofB7XSZ7hUA=",
         "ref": "refs/heads/main",
-        "rev": "58625e82c685426d441be5b422c9ad88e4867d20",
-        "revCount": 11145,
+        "rev": "77a800d7294d29ded899af9685c65babb3a62821",
+        "revCount": 11215,
         "type": "git",
         "url": "https://chromium.googlesource.com/chromium/tools/depot_tools"
       },
@@ -39,34 +39,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1733312601,
-        "narHash": "sha256-4pDvzqnegAfRkPwO3wmwBhVi/Sye1mzps0zHWYnP88c=",
+        "lastModified": 1736143030,
+        "narHash": "sha256-+hu54pAoLDEZT9pjHlqL9DNzWz0NbUn8NEAHP7PQPzU=",
         "owner": "hercules-ci",
         "repo": "flake-parts",
-        "rev": "205b12d8b7cd4802fbcb8e8ef6a0f1408781a4f9",
+        "rev": "b905f6fc23a9051a6e1b741e1438dbfc0634c6de",
         "type": "github"
       },
       "original": {
         "owner": "hercules-ci",
         "repo": "flake-parts",
-        "type": "github"
-      }
-    },
-    "flake-utils": {
-      "inputs": {
-        "systems": "systems"
-      },
-      "locked": {
-        "lastModified": 1694529238,
-        "narHash": "sha256-zsNZZGTGnMOf9YpHKJqMSsa0dXbfmxeoJ7xHlrt+xmY=",
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "rev": "ff7b65b44d01cf9ba6a71320833626af21126384",
-        "type": "github"
-      },
-      "original": {
-        "owner": "numtide",
-        "repo": "flake-utils",
         "type": "github"
       }
     },
@@ -76,15 +58,14 @@
         "gitignore": "gitignore",
         "nixpkgs": [
           "nixpkgs"
-        ],
-        "nixpkgs-stable": "nixpkgs-stable"
+        ]
       },
       "locked": {
-        "lastModified": 1734797603,
-        "narHash": "sha256-ulZN7ps8nBV31SE+dwkDvKIzvN6hroRY8sYOT0w+E28=",
+        "lastModified": 1737465171,
+        "narHash": "sha256-R10v2hoJRLq8jcL4syVFag7nIGE7m13qO48wRIukWNg=",
         "owner": "cachix",
         "repo": "git-hooks.nix",
-        "rev": "f0f0dc4920a903c3e08f5bdb9246bb572fcae498",
+        "rev": "9364dc02281ce2d37a1f55b6e51f7c0f65a75f17",
         "type": "github"
       },
       "original": {
@@ -114,107 +95,18 @@
         "type": "github"
       }
     },
-    "gomod2nix": {
-      "inputs": {
-        "flake-utils": "flake-utils",
-        "nixpkgs": [
-          "luci-go",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1717631770,
-        "narHash": "sha256-HaUc8mKC1AvQ5Vvsi09mBNmybKuPxakobyQaqeXMJ/Y=",
-        "owner": "marksisson",
-        "repo": "gomod2nix",
-        "rev": "db1533e57804423eb99529530e99be1c3c69f16b",
-        "type": "github"
-      },
-      "original": {
-        "owner": "marksisson",
-        "ref": "patches/fix-mkgoenv-to-allow-passing-more-attributes",
-        "repo": "gomod2nix",
-        "type": "github"
-      }
-    },
-    "luci-go": {
-      "inputs": {
-        "flake-parts": [
-          "flake-parts"
-        ],
-        "git-hooks": [
-          "git-hooks"
-        ],
-        "gomod2nix": "gomod2nix",
-        "luci-go-src": "luci-go-src",
-        "nixpkgs": [
-          "nixpkgs"
-        ],
-        "systems": [
-          "systems"
-        ],
-        "treefmt-nix": [
-          "treefmt-nix"
-        ]
-      },
-      "locked": {
-        "lastModified": 1732050120,
-        "narHash": "sha256-Qs2Ffxp1vqD5fdxutbT802EAuEhTDSnc+35WyDhSwzo=",
-        "ref": "refs/heads/main",
-        "rev": "e206750c6a36faa009bea034a1510f8a2d0e1d24",
-        "revCount": 2,
-        "type": "git",
-        "url": "ssh://git@github.com/marksisson/luci-go-nix"
-      },
-      "original": {
-        "type": "git",
-        "url": "ssh://git@github.com/marksisson/luci-go-nix"
-      }
-    },
-    "luci-go-src": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1732034744,
-        "narHash": "sha256-FNCsrC4AJ7rGA7d1PD51JjNCTN1ADi+aboBaxG/qVg8=",
-        "ref": "refs/heads/main",
-        "rev": "c2195400d5ba8ce51546c52c027d4f59ba81c545",
-        "revCount": 17527,
-        "type": "git",
-        "url": "https://chromium.googlesource.com/infra/luci/luci-go"
-      },
-      "original": {
-        "type": "git",
-        "url": "https://chromium.googlesource.com/infra/luci/luci-go"
-      }
-    },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1735264675,
-        "narHash": "sha256-MgdXpeX2GuJbtlBrH9EdsUeWl/yXEubyvxM1G+yO4Ak=",
-        "rev": "d49da4c08359e3c39c4e27c74ac7ac9b70085966",
-        "revCount": 712007,
+        "lastModified": 1737885640,
+        "narHash": "sha256-GFzPxJzTd1rPIVD4IW+GwJlyGwBDV1Tj5FLYwDQQ9sM=",
+        "rev": "4e96537f163fad24ed9eb317798a79afc85b51b7",
+        "revCount": 713719,
         "type": "tarball",
-        "url": "https://api.flakehub.com/f/pinned/NixOS/nixpkgs/0.2411.712007%2Brev-d49da4c08359e3c39c4e27c74ac7ac9b70085966/01940ca0-b117-7d0e-b1ef-d579ee6d2f13/source.tar.gz"
+        "url": "https://api.flakehub.com/f/pinned/NixOS/nixpkgs/0.2411.713719%2Brev-4e96537f163fad24ed9eb317798a79afc85b51b7/0194a5bc-8d66-7d8a-ba9c-e4e12895437f/source.tar.gz"
       },
       "original": {
         "type": "tarball",
         "url": "https://flakehub.com/f/NixOS/nixpkgs/%2A.tar.gz"
-      }
-    },
-    "nixpkgs-stable": {
-      "locked": {
-        "lastModified": 1730741070,
-        "narHash": "sha256-edm8WG19kWozJ/GqyYx2VjW99EdhjKwbY3ZwdlPAAlo=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "d063c1dd113c91ab27959ba540c0d9753409edf3",
-        "type": "github"
-      },
-      "original": {
-        "owner": "NixOS",
-        "ref": "nixos-24.05",
-        "repo": "nixpkgs",
-        "type": "github"
       }
     },
     "root": {
@@ -222,28 +114,12 @@
         "depot_tools": "depot_tools",
         "flake-parts": "flake-parts",
         "git-hooks": "git-hooks",
-        "luci-go": "luci-go",
         "nixpkgs": "nixpkgs",
-        "systems": "systems_2",
+        "systems": "systems",
         "treefmt-nix": "treefmt-nix"
       }
     },
     "systems": {
-      "locked": {
-        "lastModified": 1681028828,
-        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
-        "owner": "nix-systems",
-        "repo": "default",
-        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-systems",
-        "repo": "default",
-        "type": "github"
-      }
-    },
-    "systems_2": {
       "locked": {
         "lastModified": 1681028828,
         "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
@@ -265,11 +141,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1735135567,
-        "narHash": "sha256-8T3K5amndEavxnludPyfj3Z1IkcFdRpR23q+T0BVeZE=",
+        "lastModified": 1737483750,
+        "narHash": "sha256-5An1wq5U8sNycOBBg3nsDDgpwBmR9liOpDGlhliA6Xo=",
         "owner": "numtide",
         "repo": "treefmt-nix",
-        "rev": "9e09d30a644c57257715902efbb3adc56c79cf28",
+        "rev": "f2cc121df15418d028a59c9737d38e3a90fbaf8f",
         "type": "github"
       },
       "original": {
