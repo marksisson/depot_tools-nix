@@ -1,0 +1,13 @@
+diff --git a/cipd b/cipd
+index 7f9cca27..f3086938 100755
+--- a/cipd
++++ b/cipd
+@@ -94,7 +94,7 @@ CIPD_ROOT="${DEPOT_TOOLS_DIR}"
+ # value in .cipd_client_root file overrides the default root.
+ CIPD_ROOT_OVERRIDE_FILE="${DEPOT_TOOLS_DIR}/.cipd_client_root"
+ if [ -f "${CIPD_ROOT_OVERRIDE_FILE}" ]; then
+-  CIPD_ROOT=$(<"${CIPD_ROOT_OVERRIDE_FILE}")
++  CIPD_ROOT=$(eval echo "$(cat "${CIPD_ROOT_OVERRIDE_FILE}")")
+   mkdir -p "${CIPD_ROOT}"
+ fi
+ CLIENT="${CIPD_ROOT}/.cipd_client"

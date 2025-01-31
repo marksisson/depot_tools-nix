@@ -13,6 +13,7 @@
         patchedSrc = pkgs.applyPatches {
           inherit pname src;
           patches = [
+            ./patches/cipd.patch
             ./patches/cipd_bin_setup.sh.patch
             ./patches/ninja.py.patch
             ./patches/utils.py.patch
